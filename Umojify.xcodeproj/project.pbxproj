@@ -1,0 +1,910 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		160043871D9DED090086BAE8 /* Brows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160043861D9DED090086BAE8 /* Brows.swift */; };
+		16255DD11D5ABB7F0035C900 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16BAC0BB1D54FB6100946F8D /* Info.plist */; };
+		162707ED1D767E1100F25B8C /* FaceGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 162707EC1D767E1100F25B8C /* FaceGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		162707F41D767E1100F25B8C /* FaceGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 162707EA1D767E1100F25B8C /* FaceGenerator.framework */; };
+		162707FB1D767E1100F25B8C /* FaceGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162707FA1D767E1100F25B8C /* FaceGeneratorTests.swift */; };
+		162707FF1D767E1100F25B8C /* FaceGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 162707EA1D767E1100F25B8C /* FaceGenerator.framework */; };
+		162708001D767E1100F25B8C /* FaceGenerator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 162707EA1D767E1100F25B8C /* FaceGenerator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1627080A1D767FBF00F25B8C /* FaceGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 162707EA1D767E1100F25B8C /* FaceGenerator.framework */; };
+		162708121D80F37E00F25B8C /* Head.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162708111D80F37E00F25B8C /* Head.swift */; };
+		162708171D84AFE800F25B8C /* FaceGeneratorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162708161D84AFE800F25B8C /* FaceGeneratorController.swift */; };
+		162708191D84B02D00F25B8C /* FaceMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162708181D84B02D00F25B8C /* FaceMapper.swift */; };
+		1627081B1D84B87000F25B8C /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627081A1D84B87000F25B8C /* GlobalFunctions.swift */; };
+		1627081D1D84E97C00F25B8C /* Mouth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627081C1D84E97C00F25B8C /* Mouth.swift */; };
+		1627081F1D8799CB00F25B8C /* Nose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1627081E1D8799CB00F25B8C /* Nose.swift */; };
+		162708221D89D44C00F25B8C /* Eyes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162708211D89D44C00F25B8C /* Eyes.swift */; };
+		162708241D89DAC600F25B8C /* Hair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162708231D89DAC600F25B8C /* Hair.swift */; };
+		162708261D89EAE300F25B8C /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162708251D89EAE300F25B8C /* EditorView.swift */; };
+		1687042D1D642354000BF4A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16BAC0B61D54FB6100946F8D /* Assets.xcassets */; };
+		168704311D690CC8000BF4A8 /* CameraPrepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168704301D690CC8000BF4A8 /* CameraPrepViewController.swift */; };
+		16BAC0B01D54FB6100946F8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BAC0AF1D54FB6100946F8D /* AppDelegate.swift */; };
+		16BAC0B21D54FB6100946F8D /* FaceCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BAC0B11D54FB6100946F8D /* FaceCaptureViewController.swift */; };
+		16BAC0B51D54FB6100946F8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16BAC0B31D54FB6100946F8D /* Main.storyboard */; };
+		16BAC0B71D54FB6100946F8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16BAC0B61D54FB6100946F8D /* Assets.xcassets */; };
+		16BAC0BA1D54FB6100946F8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16BAC0B81D54FB6100946F8D /* LaunchScreen.storyboard */; };
+		16BAC0DE1D54FB7100946F8D /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BAC0DD1D54FB7100946F8D /* Accelerate.framework */; };
+		16BAC0E21D54FB8A00946F8D /* DlibWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16BAC0E11D54FB8A00946F8D /* DlibWrapper.mm */; };
+		16BAC0E51D5502D700946F8D /* libdlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BAC0E31D5502D700946F8D /* libdlib.a */; };
+		16BAC0E61D5502D700946F8D /* shape_predictor_68_face_landmarks.dat in Resources */ = {isa = PBXBuildFile; fileRef = 16BAC0E41D5502D700946F8D /* shape_predictor_68_face_landmarks.dat */; };
+		16BAC0E81D55044000946F8D /* SessionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BAC0E71D55044000946F8D /* SessionHandler.swift */; };
+		16C4A7361D552BCB001B59AF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C4A7351D552BCB001B59AF /* LoginViewController.swift */; };
+		16C4A73A1D565628001B59AF /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C4A7371D565628001B59AF /* FBSDKCoreKit.framework */; };
+		16C4A73B1D565628001B59AF /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C4A7381D565628001B59AF /* FBSDKLoginKit.framework */; };
+		16C4A73C1D565628001B59AF /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C4A7391D565628001B59AF /* FBSDKShareKit.framework */; };
+		16C4A73F1D565AF2001B59AF /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C4A73E1D565AF2001B59AF /* Bolts.framework */; };
+		16F2D1521D8A0F010021F6BE /* EditorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16F2D1511D8A0F010021F6BE /* EditorView.xib */; };
+		16F8DBA01D568A1C00F4F9D1 /* EditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F8DB9F1D568A1C00F4F9D1 /* EditorViewController.swift */; };
+		16F8DBA21D56A32300F4F9D1 /* READMORE in Resources */ = {isa = PBXBuildFile; fileRef = 16F8DBA11D56A32300F4F9D1 /* READMORE */; };
+		16F8DBAC1D5AB65E00F4F9D1 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F8DBAB1D5AB65E00F4F9D1 /* KeyboardViewController.swift */; };
+		16F8DBB11D5AB65E00F4F9D1 /* Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 16F8DBA91D5AB65D00F4F9D1 /* Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		162707F51D767E1100F25B8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16BAC0A41D54FB6100946F8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 162707E91D767E1100F25B8C;
+			remoteInfo = FaceGenerator;
+		};
+		162707F71D767E1100F25B8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16BAC0A41D54FB6100946F8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16BAC0AB1D54FB6100946F8D;
+			remoteInfo = Umojify;
+		};
+		162707FD1D767E1100F25B8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16BAC0A41D54FB6100946F8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 162707E91D767E1100F25B8C;
+			remoteInfo = FaceGenerator;
+		};
+		16F8DBAE1D5AB65E00F4F9D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16BAC0A41D54FB6100946F8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16F8DBA81D5AB65D00F4F9D1;
+			remoteInfo = Keyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		162708041D767E1100F25B8C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				162708001D767E1100F25B8C /* FaceGenerator.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16F8DBB01D5AB65E00F4F9D1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				16F8DBB11D5AB65E00F4F9D1 /* Keyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		160043861D9DED090086BAE8 /* Brows.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brows.swift; sourceTree = "<group>"; };
+		162707E21D767BD000F25B8C /* Umojify.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Umojify.entitlements; sourceTree = "<group>"; };
+		162707E31D767C0800F25B8C /* Keyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Keyboard.entitlements; sourceTree = "<group>"; };
+		162707EA1D767E1100F25B8C /* FaceGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FaceGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		162707EC1D767E1100F25B8C /* FaceGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceGenerator.h; sourceTree = "<group>"; };
+		162707EE1D767E1100F25B8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		162707F31D767E1100F25B8C /* FaceGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		162707FA1D767E1100F25B8C /* FaceGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceGeneratorTests.swift; sourceTree = "<group>"; };
+		162707FC1D767E1100F25B8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		162708111D80F37E00F25B8C /* Head.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Head.swift; sourceTree = "<group>"; };
+		162708161D84AFE800F25B8C /* FaceGeneratorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceGeneratorController.swift; sourceTree = "<group>"; };
+		162708181D84B02D00F25B8C /* FaceMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceMapper.swift; sourceTree = "<group>"; };
+		1627081A1D84B87000F25B8C /* GlobalFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
+		1627081C1D84E97C00F25B8C /* Mouth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mouth.swift; sourceTree = "<group>"; };
+		1627081E1D8799CB00F25B8C /* Nose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nose.swift; sourceTree = "<group>"; };
+		162708201D879B1100F25B8C /* FullSizeRender.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FullSizeRender.jpg; sourceTree = "<group>"; };
+		162708211D89D44C00F25B8C /* Eyes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Eyes.swift; sourceTree = "<group>"; };
+		162708231D89DAC600F25B8C /* Hair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hair.swift; sourceTree = "<group>"; };
+		162708251D89EAE300F25B8C /* EditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
+		168704301D690CC8000BF4A8 /* CameraPrepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraPrepViewController.swift; path = ../CameraPrepViewController.swift; sourceTree = "<group>"; };
+		16BAC0AC1D54FB6100946F8D /* Umojify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Umojify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16BAC0AF1D54FB6100946F8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		16BAC0B11D54FB6100946F8D /* FaceCaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceCaptureViewController.swift; sourceTree = "<group>"; };
+		16BAC0B41D54FB6100946F8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		16BAC0B61D54FB6100946F8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16BAC0B91D54FB6100946F8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		16BAC0BB1D54FB6100946F8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16BAC0DD1D54FB7100946F8D /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		16BAC0DF1D54FB8900946F8D /* Umojify-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Umojify-Bridging-Header.h"; sourceTree = "<group>"; };
+		16BAC0E01D54FB8A00946F8D /* DlibWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DlibWrapper.h; sourceTree = "<group>"; };
+		16BAC0E11D54FB8A00946F8D /* DlibWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DlibWrapper.mm; sourceTree = "<group>"; };
+		16BAC0E31D5502D700946F8D /* libdlib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdlib.a; path = Umojify/lib/libdlib.a; sourceTree = "<group>"; };
+		16BAC0E41D5502D700946F8D /* shape_predictor_68_face_landmarks.dat */ = {isa = PBXFileReference; lastKnownFileType = file; name = shape_predictor_68_face_landmarks.dat; path = Umojify/lib/shape_predictor_68_face_landmarks.dat; sourceTree = "<group>"; };
+		16BAC0E71D55044000946F8D /* SessionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionHandler.swift; sourceTree = "<group>"; };
+		16C4A7351D552BCB001B59AF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		16C4A7371D565628001B59AF /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Umojify/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		16C4A7381D565628001B59AF /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = Umojify/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		16C4A7391D565628001B59AF /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = Umojify/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		16C4A73E1D565AF2001B59AF /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		16F2D1511D8A0F010021F6BE /* EditorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditorView.xib; sourceTree = "<group>"; };
+		16F8DB9F1D568A1C00F4F9D1 /* EditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorViewController.swift; sourceTree = "<group>"; };
+		16F8DBA11D56A32300F4F9D1 /* READMORE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = READMORE; sourceTree = "<group>"; };
+		16F8DBA91D5AB65D00F4F9D1 /* Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		16F8DBAB1D5AB65E00F4F9D1 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		16F8DBAD1D5AB65E00F4F9D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		162707E61D767E1100F25B8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		162707F01D767E1100F25B8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				162707F41D767E1100F25B8C /* FaceGenerator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16BAC0A91D54FB6100946F8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16BAC0E51D5502D700946F8D /* libdlib.a in Frameworks */,
+				16C4A73A1D565628001B59AF /* FBSDKCoreKit.framework in Frameworks */,
+				16C4A73C1D565628001B59AF /* FBSDKShareKit.framework in Frameworks */,
+				162707FF1D767E1100F25B8C /* FaceGenerator.framework in Frameworks */,
+				16C4A73F1D565AF2001B59AF /* Bolts.framework in Frameworks */,
+				16C4A73B1D565628001B59AF /* FBSDKLoginKit.framework in Frameworks */,
+				16BAC0DE1D54FB7100946F8D /* Accelerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16F8DBA61D5AB65D00F4F9D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1627080A1D767FBF00F25B8C /* FaceGenerator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		162707EB1D767E1100F25B8C /* FaceGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				162707EC1D767E1100F25B8C /* FaceGenerator.h */,
+				162708161D84AFE800F25B8C /* FaceGeneratorController.swift */,
+				1627081A1D84B87000F25B8C /* GlobalFunctions.swift */,
+				162708181D84B02D00F25B8C /* FaceMapper.swift */,
+				162708131D80F38200F25B8C /* Models */,
+				162707EE1D767E1100F25B8C /* Info.plist */,
+				162708201D879B1100F25B8C /* FullSizeRender.jpg */,
+			);
+			path = FaceGenerator;
+			sourceTree = "<group>";
+		};
+		162707F91D767E1100F25B8C /* FaceGeneratorTests */ = {
+			isa = PBXGroup;
+			children = (
+				162707FA1D767E1100F25B8C /* FaceGeneratorTests.swift */,
+				162707FC1D767E1100F25B8C /* Info.plist */,
+			);
+			path = FaceGeneratorTests;
+			sourceTree = "<group>";
+		};
+		1627080C1D7682B600F25B8C /* Dlib */ = {
+			isa = PBXGroup;
+			children = (
+				16BAC0E31D5502D700946F8D /* libdlib.a */,
+				16BAC0E41D5502D700946F8D /* shape_predictor_68_face_landmarks.dat */,
+			);
+			name = Dlib;
+			sourceTree = "<group>";
+		};
+		162708131D80F38200F25B8C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				162708211D89D44C00F25B8C /* Eyes.swift */,
+				160043861D9DED090086BAE8 /* Brows.swift */,
+				162708231D89DAC600F25B8C /* Hair.swift */,
+				162708111D80F37E00F25B8C /* Head.swift */,
+				1627081C1D84E97C00F25B8C /* Mouth.swift */,
+				1627081E1D8799CB00F25B8C /* Nose.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		16BAC0A31D54FB6100946F8D = {
+			isa = PBXGroup;
+			children = (
+				16BAC0AE1D54FB6100946F8D /* Umojify */,
+				162707EB1D767E1100F25B8C /* FaceGenerator */,
+				16F8DBAA1D5AB65E00F4F9D1 /* Keyboard */,
+				162707F91D767E1100F25B8C /* FaceGeneratorTests */,
+				16BAC0AD1D54FB6100946F8D /* Products */,
+				1627080C1D7682B600F25B8C /* Dlib */,
+				16C4A73D1D565635001B59AF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		16BAC0AD1D54FB6100946F8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16BAC0AC1D54FB6100946F8D /* Umojify.app */,
+				16F8DBA91D5AB65D00F4F9D1 /* Keyboard.appex */,
+				162707EA1D767E1100F25B8C /* FaceGenerator.framework */,
+				162707F31D767E1100F25B8C /* FaceGeneratorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16BAC0AE1D54FB6100946F8D /* Umojify */ = {
+			isa = PBXGroup;
+			children = (
+				162707E21D767BD000F25B8C /* Umojify.entitlements */,
+				16BAC0AF1D54FB6100946F8D /* AppDelegate.swift */,
+				16C4A7351D552BCB001B59AF /* LoginViewController.swift */,
+				16BAC0B11D54FB6100946F8D /* FaceCaptureViewController.swift */,
+				16BAC0E71D55044000946F8D /* SessionHandler.swift */,
+				16F8DB9F1D568A1C00F4F9D1 /* EditorViewController.swift */,
+				162708251D89EAE300F25B8C /* EditorView.swift */,
+				16F2D1511D8A0F010021F6BE /* EditorView.xib */,
+				168704301D690CC8000BF4A8 /* CameraPrepViewController.swift */,
+				16BAC0E01D54FB8A00946F8D /* DlibWrapper.h */,
+				16BAC0E11D54FB8A00946F8D /* DlibWrapper.mm */,
+				16BAC0DF1D54FB8900946F8D /* Umojify-Bridging-Header.h */,
+				16BAC0B61D54FB6100946F8D /* Assets.xcassets */,
+				16BAC0B31D54FB6100946F8D /* Main.storyboard */,
+				16BAC0B81D54FB6100946F8D /* LaunchScreen.storyboard */,
+				16BAC0BB1D54FB6100946F8D /* Info.plist */,
+				16F8DBA11D56A32300F4F9D1 /* READMORE */,
+			);
+			path = Umojify;
+			sourceTree = "<group>";
+		};
+		16C4A73D1D565635001B59AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16C4A73E1D565AF2001B59AF /* Bolts.framework */,
+				16C4A7371D565628001B59AF /* FBSDKCoreKit.framework */,
+				16C4A7381D565628001B59AF /* FBSDKLoginKit.framework */,
+				16C4A7391D565628001B59AF /* FBSDKShareKit.framework */,
+				16BAC0DD1D54FB7100946F8D /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		16F8DBAA1D5AB65E00F4F9D1 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				162707E31D767C0800F25B8C /* Keyboard.entitlements */,
+				16F8DBAB1D5AB65E00F4F9D1 /* KeyboardViewController.swift */,
+				16F8DBAD1D5AB65E00F4F9D1 /* Info.plist */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		162707E71D767E1100F25B8C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				162707ED1D767E1100F25B8C /* FaceGenerator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		162707E91D767E1100F25B8C /* FaceGenerator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 162708011D767E1100F25B8C /* Build configuration list for PBXNativeTarget "FaceGenerator" */;
+			buildPhases = (
+				162707E51D767E1100F25B8C /* Sources */,
+				162707E61D767E1100F25B8C /* Frameworks */,
+				162707E71D767E1100F25B8C /* Headers */,
+				162707E81D767E1100F25B8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FaceGenerator;
+			productName = FaceGenerator;
+			productReference = 162707EA1D767E1100F25B8C /* FaceGenerator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		162707F21D767E1100F25B8C /* FaceGeneratorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 162708051D767E1100F25B8C /* Build configuration list for PBXNativeTarget "FaceGeneratorTests" */;
+			buildPhases = (
+				162707EF1D767E1100F25B8C /* Sources */,
+				162707F01D767E1100F25B8C /* Frameworks */,
+				162707F11D767E1100F25B8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				162707F61D767E1100F25B8C /* PBXTargetDependency */,
+				162707F81D767E1100F25B8C /* PBXTargetDependency */,
+			);
+			name = FaceGeneratorTests;
+			productName = FaceGeneratorTests;
+			productReference = 162707F31D767E1100F25B8C /* FaceGeneratorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		16BAC0AB1D54FB6100946F8D /* Umojify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16BAC0D41D54FB6100946F8D /* Build configuration list for PBXNativeTarget "Umojify" */;
+			buildPhases = (
+				16BAC0A81D54FB6100946F8D /* Sources */,
+				16BAC0A91D54FB6100946F8D /* Frameworks */,
+				16BAC0AA1D54FB6100946F8D /* Resources */,
+				16F8DBB01D5AB65E00F4F9D1 /* Embed App Extensions */,
+				162708041D767E1100F25B8C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16F8DBAF1D5AB65E00F4F9D1 /* PBXTargetDependency */,
+				162707FE1D767E1100F25B8C /* PBXTargetDependency */,
+			);
+			name = Umojify;
+			productName = emoji2;
+			productReference = 16BAC0AC1D54FB6100946F8D /* Umojify.app */;
+			productType = "com.apple.product-type.application";
+		};
+		16F8DBA81D5AB65D00F4F9D1 /* Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16F8DBB21D5AB65E00F4F9D1 /* Build configuration list for PBXNativeTarget "Keyboard" */;
+			buildPhases = (
+				16F8DBA51D5AB65D00F4F9D1 /* Sources */,
+				16F8DBA61D5AB65D00F4F9D1 /* Frameworks */,
+				16F8DBA71D5AB65D00F4F9D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Keyboard;
+			productName = Keyboard;
+			productReference = 16F8DBA91D5AB65D00F4F9D1 /* Keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16BAC0A41D54FB6100946F8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Umojify;
+				TargetAttributes = {
+					162707E91D767E1100F25B8C = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = GVAU62HT26;
+						LastSwiftMigration = 0800;
+					};
+					162707F21D767E1100F25B8C = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+						TestTargetID = 16BAC0AB1D54FB6100946F8D;
+					};
+					16BAC0AB1D54FB6100946F8D = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = GVAU62HT26;
+						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					16F8DBA81D5AB65D00F4F9D1 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = GVAU62HT26;
+						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 16BAC0A71D54FB6100946F8D /* Build configuration list for PBXProject "Umojify" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 16BAC0A31D54FB6100946F8D;
+			productRefGroup = 16BAC0AD1D54FB6100946F8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16BAC0AB1D54FB6100946F8D /* Umojify */,
+				16F8DBA81D5AB65D00F4F9D1 /* Keyboard */,
+				162707E91D767E1100F25B8C /* FaceGenerator */,
+				162707F21D767E1100F25B8C /* FaceGeneratorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		162707E81D767E1100F25B8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		162707F11D767E1100F25B8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16BAC0AA1D54FB6100946F8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16BAC0BA1D54FB6100946F8D /* LaunchScreen.storyboard in Resources */,
+				16F2D1521D8A0F010021F6BE /* EditorView.xib in Resources */,
+				16BAC0B71D54FB6100946F8D /* Assets.xcassets in Resources */,
+				16255DD11D5ABB7F0035C900 /* Info.plist in Resources */,
+				16BAC0B51D54FB6100946F8D /* Main.storyboard in Resources */,
+				16BAC0E61D5502D700946F8D /* shape_predictor_68_face_landmarks.dat in Resources */,
+				16F8DBA21D56A32300F4F9D1 /* READMORE in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16F8DBA71D5AB65D00F4F9D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1687042D1D642354000BF4A8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		162707E51D767E1100F25B8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				162708171D84AFE800F25B8C /* FaceGeneratorController.swift in Sources */,
+				162708241D89DAC600F25B8C /* Hair.swift in Sources */,
+				1627081D1D84E97C00F25B8C /* Mouth.swift in Sources */,
+				160043871D9DED090086BAE8 /* Brows.swift in Sources */,
+				162708221D89D44C00F25B8C /* Eyes.swift in Sources */,
+				1627081F1D8799CB00F25B8C /* Nose.swift in Sources */,
+				1627081B1D84B87000F25B8C /* GlobalFunctions.swift in Sources */,
+				162708121D80F37E00F25B8C /* Head.swift in Sources */,
+				162708191D84B02D00F25B8C /* FaceMapper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		162707EF1D767E1100F25B8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				162707FB1D767E1100F25B8C /* FaceGeneratorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16BAC0A81D54FB6100946F8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				168704311D690CC8000BF4A8 /* CameraPrepViewController.swift in Sources */,
+				16BAC0B21D54FB6100946F8D /* FaceCaptureViewController.swift in Sources */,
+				16F8DBA01D568A1C00F4F9D1 /* EditorViewController.swift in Sources */,
+				16BAC0E81D55044000946F8D /* SessionHandler.swift in Sources */,
+				16BAC0E21D54FB8A00946F8D /* DlibWrapper.mm in Sources */,
+				162708261D89EAE300F25B8C /* EditorView.swift in Sources */,
+				16C4A7361D552BCB001B59AF /* LoginViewController.swift in Sources */,
+				16BAC0B01D54FB6100946F8D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16F8DBA51D5AB65D00F4F9D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16F8DBAC1D5AB65E00F4F9D1 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		162707F61D767E1100F25B8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 162707E91D767E1100F25B8C /* FaceGenerator */;
+			targetProxy = 162707F51D767E1100F25B8C /* PBXContainerItemProxy */;
+		};
+		162707F81D767E1100F25B8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16BAC0AB1D54FB6100946F8D /* Umojify */;
+			targetProxy = 162707F71D767E1100F25B8C /* PBXContainerItemProxy */;
+		};
+		162707FE1D767E1100F25B8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 162707E91D767E1100F25B8C /* FaceGenerator */;
+			targetProxy = 162707FD1D767E1100F25B8C /* PBXContainerItemProxy */;
+		};
+		16F8DBAF1D5AB65E00F4F9D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16F8DBA81D5AB65D00F4F9D1 /* Keyboard */;
+			targetProxy = 16F8DBAE1D5AB65E00F4F9D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		16BAC0B31D54FB6100946F8D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16BAC0B41D54FB6100946F8D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		16BAC0B81D54FB6100946F8D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16BAC0B91D54FB6100946F8D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		162708021D767E1100F25B8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FaceGenerator/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Umojify.FaceGenerator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		162708031D767E1100F25B8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FaceGenerator/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Umojify.FaceGenerator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		162708061D767E1100F25B8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				INFOPLIST_FILE = FaceGeneratorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Umojify.FaceGeneratorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Umojify.app/Umojify";
+			};
+			name = Debug;
+		};
+		162708071D767E1100F25B8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				INFOPLIST_FILE = FaceGeneratorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Umojify.FaceGeneratorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Umojify.app/Umojify";
+			};
+			name = Release;
+		};
+		16BAC0D21D54FB6100946F8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Omeed Tabiei (H2J57M62TW)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		16BAC0D31D54FB6100946F8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Omeed Tabiei (H2J57M62TW)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16BAC0D51D54FB6100946F8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Umojify/Umojify.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Umojify",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DLIB_NO_GUI_SUPPORT,
+					NDEBUG,
+					DLIB_USE_LAPACK,
+					DLIB_USE_BLAS,
+					DLIB_JPEG_SUPPORT,
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Umojify/lib";
+				INFOPLIST_FILE = Umojify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Umojify/lib",
+					"$(PROJECT_DIR)/Umojify",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = Umojify.Umojify;
+				PRODUCT_NAME = Umojify;
+				SWIFT_OBJC_BRIDGING_HEADER = "Umojify/Umojify-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		16BAC0D61D54FB6100946F8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Umojify/Umojify.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Umojify",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DLIB_NO_GUI_SUPPORT,
+					NDEBUG,
+					DLIB_USE_LAPACK,
+					DLIB_USE_BLAS,
+					DLIB_JPEG_SUPPORT,
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Umojify/lib";
+				INFOPLIST_FILE = Umojify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Umojify/lib",
+					"$(PROJECT_DIR)/Umojify",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = Umojify.Umojify;
+				PRODUCT_NAME = Umojify;
+				SWIFT_OBJC_BRIDGING_HEADER = "Umojify/Umojify-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		16F8DBB31D5AB65E00F4F9D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = Keyboard/Keyboard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Keyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Umojify.Umojify.Keyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		16F8DBB41D5AB65E00F4F9D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = Keyboard/Keyboard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Keyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Umojify.Umojify.Keyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		162708011D767E1100F25B8C /* Build configuration list for PBXNativeTarget "FaceGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				162708021D767E1100F25B8C /* Debug */,
+				162708031D767E1100F25B8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		162708051D767E1100F25B8C /* Build configuration list for PBXNativeTarget "FaceGeneratorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				162708061D767E1100F25B8C /* Debug */,
+				162708071D767E1100F25B8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16BAC0A71D54FB6100946F8D /* Build configuration list for PBXProject "Umojify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16BAC0D21D54FB6100946F8D /* Debug */,
+				16BAC0D31D54FB6100946F8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16BAC0D41D54FB6100946F8D /* Build configuration list for PBXNativeTarget "Umojify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16BAC0D51D54FB6100946F8D /* Debug */,
+				16BAC0D61D54FB6100946F8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16F8DBB21D5AB65E00F4F9D1 /* Build configuration list for PBXNativeTarget "Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16F8DBB31D5AB65E00F4F9D1 /* Debug */,
+				16F8DBB41D5AB65E00F4F9D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16BAC0A41D54FB6100946F8D /* Project object */;
+}

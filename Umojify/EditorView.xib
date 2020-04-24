@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="EditorView" id="iN0-l3-epB" customClass="EditorView" customModule="Umojify" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Bay-c0-VKG">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="1BR-Rb-FDW"/>
+                    </constraints>
+                    <connections>
+                        <action selector="hairSliderChanged:" destination="iN0-l3-epB" eventType="valueChanged" id="yLh-Z5-Dva"/>
+                    </connections>
+                </slider>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hair Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6G-jX-1ld">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="83" id="WQl-Fu-S8t"/>
+                        <constraint firstAttribute="height" constant="24" id="sLj-Kj-lqw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Om-Su-urq">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="afI-8d-g61"/>
+                        <constraint firstAttribute="height" constant="22" id="rPG-QC-ZnQ"/>
+                    </constraints>
+                    <connections>
+                        <action selector="exitButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="JDK-OY-mub"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.043137254901960784" green="0.37647058823529411" blue="0.64313725490196072" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="tintColor" red="0.1137254902" green="0.87450980389999999" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="f6G-jX-1ld" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="2d6-AO-HTB"/>
+                <constraint firstItem="f6G-jX-1ld" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="P7M-un-S6N"/>
+                <constraint firstAttribute="trailing" secondItem="Bay-c0-VKG" secondAttribute="trailing" constant="30" id="YRg-qh-IkH"/>
+                <constraint firstItem="Bay-c0-VKG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="g6N-ed-RF3"/>
+                <constraint firstItem="Bay-c0-VKG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="s0X-5f-sBf"/>
+                <constraint firstItem="5Om-Su-urq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="vNZ-09-ve8"/>
+                <constraint firstAttribute="trailing" secondItem="5Om-Su-urq" secondAttribute="trailing" constant="8" id="zzA-Kf-MCo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="hairSlider" destination="Bay-c0-VKG" id="FB7-7a-UFH"/>
+            </connections>
+            <point key="canvasLocation" x="91" y="172"/>
+        </view>
+    </objects>
+</document>
